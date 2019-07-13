@@ -1,3 +1,4 @@
+
 body {
     padding: 0;
     margin: 0;
@@ -7,73 +8,85 @@ body {
     line-height: 140%;
     color: #444;
     background-color: #000;
-	/* For heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;.
-	For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;. */
 }
 
-.score {
-  font-size: .7em;
-  color: #000;
+/*
+#row {
+	width: 100%;
 }
-.img_bg {
+*/
+#img_bg {
+  `	
   min-height: 100%;
   min-width: 1024px;
 
-  width: 100%
+  width: 100%;
   height: auto;
 
   position: fixed;
   top: 0;
-  left: 0;
+  left: 0; 
 }
 
-#fightSection {
-	position:absolute; top: 346px; left: 5px; z-index: 1; 
+#canvas {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+ 	height: 570px;
+	width: 900px;
+	background-color:#f3e5ab;
+	margin: auto;
 }
-#restartBtn {
-	/* font-size: .5em;
-	/* font-weight:500; */
-	/* background-color: #000; */
-	/* height: 25px; */
-	/* margin-left: .3em; */
+#title {
+	font-family:"Comic Sans MS", cursive;
+	color:#F0F;
+	font-size: 3em;
+	text-align:center;
+	padding: .6em .6em;
 }
-#restart-button {
-  position:absolute; top: 594px; left: 5px; z-index: 1;
-	font-size: .75em;
-    padding: 0px 0 0 0 !important;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    margin:5px; 
-	font-weight:500; 
-	/* background-color: #000;  */
-	/* height: 25px; */
+#questions {
+	position:relative; top: 0px;
+	width: 100%;
+	height: 580px;
+	padding: 10px;
+	margin: auto;
+	text-align:center;
+}
+#answers {
+	position:relative; top: -10px; left: -20px;
+	width: 100%;
+	height: 580px;
+	padding: 5px;
+	margin: auto;
+	font-weight: 100;
+	font-size: .6em;
+}
+#startBtn {
+	position:relative; top: 160px;
 	width: 100px;
-	margin-left: .3em; 
+	height: 780px;
+	padding-right: 100px;
+	margin: auto;
 }
-#attack-button {
-	position:absolute; top: 372px; left: 5px; z-index: 1;
-	font-size: .95em;
-    padding: 0px 0 0 0 !important;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    margin:5px; 
+#countDown {
+	position:relative; top: -13px;
+	font-size: 1.1em;
+	margin: auto;
+	width: 100%;
+	left: 30%;
+	color: #0080FF;
+}
+#start-button {
+	font-size: 1.8em;
+    padding: 0px 10px 0 10px !important;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin:auto;
 	font-weight:500; 
-	/* background-color: #000;  */
-	/* height: 25px; */
-	width: 100px;
-	margin-left: .3em; 
-}
-#attackBtn {
-	/* font-size: .5em;
-	/* font-weight:500; */
-	/* background-color: #000; */
-	/* height: 25px; */
-	/* margin-left: .3em; */
-}
-#defender {
-	position:absolute; top: 412px; left: 5px; z-index: 1; 
+	width: 200px;
 }
 #gameStatus {
   position:absolute; top: 580px; left: 5px; z-index: 1;
